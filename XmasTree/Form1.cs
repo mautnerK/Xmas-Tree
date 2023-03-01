@@ -10,7 +10,6 @@ namespace XmasTree
         private void button1_Click(object sender, EventArgs e)
         {
             label_tree.Text = "\n" + textBox_header.Text + "\n \n";
-          
             int rowCount = Convert.ToInt32(textBox_rowCount.Text);
             int limiter = 3;
             for (int i = 1; i <= rowCount - 2; i++)
@@ -42,11 +41,6 @@ namespace XmasTree
                 }
                 label_tree.Text += "\n";
             }
-            else if (rowCount == 2)
-            {
-
-            }
-
             for(int i = 0; i < rowCount; i++)
             {
                 label_tree.Text += " ";
